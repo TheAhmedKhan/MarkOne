@@ -1,10 +1,12 @@
 var readlineSync=require('readline-sync');
 var points=0;
 
+//ASKING PLAYER NAME
 console.log("Welcome To My Game, Do You Know Me");
 Name=readlineSync.question("Tell me your name ");
 console.log(Name);
 
+//QUESTIONS TO BE ASKED---------
 questionOne = {
   question: readlineSync.question("Who is my favorite superhero?"),
   answer: "Hulk",
@@ -28,6 +30,9 @@ questionFive = {
   answer: "Mustang",
 }
 
+//-------------------------------------------------------------------
+
+//PROCESSING
 function QnA(){
 
   if (questionOne.question==questionOne.answer) {
@@ -58,10 +63,10 @@ function QnA(){
     points=points;
   }
   console.log("Your score is : "+points);
-
+//-------------------------------------------------------------------
 
   
   
 }
+//RUNNING FUNCTION
 QnA();
-//console.log("The score is "+points);
